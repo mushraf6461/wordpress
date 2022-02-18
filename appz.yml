@@ -28,7 +28,7 @@ volumes:
   size: 5Gi 
   
 properties:
-  ENABLE_HA: "yes"  
+  ENABLE_HA: "no"  
   #if HA is disabled
   MYSQL_HOST : "mariadb-master-10-4:3306"
   #if HA is enabled
