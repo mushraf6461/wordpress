@@ -8,7 +8,7 @@ build:
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: wordpress-5.8.10
+  image_template: wordpress-5.8
 
 deploy:
   context: minnaniju/DEV
