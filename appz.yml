@@ -44,4 +44,4 @@ properties:
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
   ADMIN_PASSWORD_HASH: $P$BrPpnNpnwWzjZf4InuhmouZR1lRGZt/
   FILE_PURGE_TIME: today-0635
-  revision : 36
+  revision : 37
