@@ -4,15 +4,15 @@ app:
   notify: mniju@ecloudcontrol.com
 
 build:
-  version: 5.8
+  version: 6.2
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: wordpress-5.8
+  image_template: wordpress-6.2
 
 deploy:
   context: minnaniju/DEV
-  replicas: 2
+  replicas: 1
   type: statefulset
   port:
   - 80
@@ -43,5 +43,5 @@ properties:
      vault: MYSQL_PASSWORD_KEY
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
   ADMIN_PASSWORD_HASH: $P$BrPpnNpnwWzjZf4InuhmouZR1lRGZt/
-  FILE_PURGE_TIME: tue-0450
+  #FILE_PURGE_TIME: tue-0450
   revision : 39
