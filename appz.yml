@@ -28,6 +28,7 @@ volumes:
   size: 5Gi 
   
 properties:
+  SITE_URL: "https://minnaniju-dev-wordpress-6-2.038c839d.lowtouch.cloud"
   ENABLE_HA: "no"  
   #if HA is disabled
   MYSQL_HOST : "mariadb-master-10-4:3306"
@@ -40,8 +41,7 @@ properties:
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
   MYSQL_PASSWORD:
-     vault: MYSQL_PASSWORD_KEY
+     vault: MYSQL_WORDPRESS_PASSWORD
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
-  ADMIN_PASSWORD_HASH: $P$BrPpnNpnwWzjZf4InuhmouZR1lRGZt/
-  #FILE_PURGE_TIME: tue-0450
-  revision : 41
+  ADMIN_PASSWORD_HASH: $P$BQCpmfbBh5Pl9wHqoWeE.hEBqKxEK0/
+  revision : 87
