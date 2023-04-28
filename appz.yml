@@ -44,5 +44,5 @@ properties:
      vault: MYSQL_WORDPRESS_PASSWORD
   APPZ_FILESYNC_HOSTNAME: wordpress-0
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
-  ADMIN_PASSWORD_HASH: $P$BvYfOxIXOnboKN890tGX6TzM6bBDzy.
+  ADMIN_PASSWORD_HASH: $P$B9RzjWl/ejH2VZknOptRpI1CPEn6iw1
   revision : 90
