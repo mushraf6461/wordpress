@@ -37,12 +37,12 @@ properties:
   #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
   MYSQL_USER: wordpress
   MYSQL_DATABASE: wordpress
-  ADMIN_USER: wpadmin
+  ADMIN_USER: cloudbourne
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
   MYSQL_PASSWORD:
      vault: MYSQL_WORDPRESS_PASSWORD
   APPZ_FILESYNC_HOSTNAME: wordpress-0
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
-  ADMIN_PASSWORD_HASH: $2y$10$a1cUCZBPnKCoMrZchmipZuRldwDBhX0ln/
+  ADMIN_PASSWORD_HASH: $P$BvYfOxIXOnboKN890tGX6TzM6bBDzy.
   revision : 89
