@@ -16,7 +16,7 @@ deploy:
   type: statefulset
   port:
   - 80
-  
+  - 443
 volumes:
 - claim: wordpress-data
   mount: /var/www/html/wp-content/uploads
@@ -35,13 +35,13 @@ properties:
   #if HA is enabled
   #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
   #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
-  MYSQL_USER: wordpress
+  MYSQL_USER: root
   MYSQL_DATABASE: wordpress
   ADMIN_USER: cloudbourne
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
-  MYSQL_PASSWORD:
-         vault: MYSQL_PASSWORD_KEY
+  MYSQL_ROOT_PASSWORD:
+         vault: MYSQL_ROOT_PASSWORD_KEY
   APPZ_FILESYNC_HOSTNAME: wordpress-0
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
   ADMIN_PASSWORD_HASH: $P$B9RzjWl/ejH2VZknOptRpI1CPEn6iw1
