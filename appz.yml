@@ -40,8 +40,8 @@ properties:
   ADMIN_USER: cloudbourne
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
-  MYSQL_ROOT_PASSWORD:
-         vault: MYSQL_ROOT_PASSWORD_KEY
+  MYSQL_PASSWORD:
+         vault: MYSQL_PASSWORD_KEY
   APPZ_FILESYNC_HOSTNAME: wordpress-0
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
   ADMIN_PASSWORD_HASH: $P$B9RzjWl/ejH2VZknOptRpI1CPEn6iw1
