@@ -4,11 +4,11 @@ app:
   notify: mniju@ecloudcontrol.com
 
 build:
-  version: 6.2
+  version: 5.8
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: wordpress-6.2
+  image_template: wordpress-5.8
 
 deploy:
   context: minnaniju/DEV
