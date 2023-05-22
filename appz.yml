@@ -35,7 +35,7 @@ properties:
   #if HA is enabled
   #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
   #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
-  MYSQL_USER: root
+  MYSQL_USER: wordpress
   MYSQL_DATABASE: wordpress
   ADMIN_USER: cloudbourne
   ADMIN_EMAIL: appzdev@cloudbourne.co
