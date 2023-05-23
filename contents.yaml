@@ -4,6 +4,7 @@ theme:
     url: https://www.ecloudcontrol.com/wp-content/uploads/2020/06/themeforest-eAydLluh-avada-responsive-multipurpose-theme-wordpress-theme-6.2.3.zip
     #name: magazine-news-byte-premium
     #url: https://www.ecloudcontrol.com/wp-content/uploads/2020/07/magazine-news-byte-premium-2-9-2.zip
+
 plugins:
    - https://downloads.wordpress.org/plugin/contact-form-7.5.7.5.1.zip
    - https://downloads.wordpress.org/plugin/query-monitor.3.12.1.zip
