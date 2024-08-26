@@ -37,6 +37,8 @@ properties:
   MYSQL_USER: ecloudcontrol_com_v3
   MYSQL_DATABASE: ecloudcontrol_com_v3
   ADMIN_USER: wpadmin
+  ADMIN_PASSWORD:
+     vault: ADMIN_PASSWORD
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
   MYSQL_PASSWORD:
