@@ -47,4 +47,4 @@ properties:
   APPZ_FILESYNC_HOSTNAME: wordpress-0
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
   ADMIN_PASSWORD_HASH: $P$Bbd5.NW6270BIKD39DoIXWQTRyzjaO1
-  revision : 2
+  revision : 3
