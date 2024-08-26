@@ -34,7 +34,7 @@ properties:
   #if HA is enabled
   #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
   #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
-  MYSQL_USER: ecloudcontrol_com_v3
+  MYSQL_USER: ecloudcontrol_com
   MYSQL_DATABASE: ecloudcontrol_com_v3
   ADMIN_USER: wpadmin
   ADMIN_PASSWORD:
