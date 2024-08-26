@@ -29,7 +29,7 @@ volumes:
   size: 5Gi 
   
 properties:
-  SITE_URL: "https://amanecloud-dev-wordpress-5-8.038c839d.lowtouch.cloud"
+  SITE_URL: "https://amanecloud-dev-wordpress-5-8.1276c99e.lowtouch.cloud"
   ENABLE_HA: "no"  
   #if HA is disabled
   MYSQL_HOST : "mysql-5-7:3306"
