@@ -1,14 +1,15 @@
+
 app:
   name: wordpress
   code: wordpress
   notify: apatnaik@ecloudcontrol.com
 
 build:
-  version: 5.5
+  version: 5.8
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: wordpress-5.5
+  image_template: wordpress-5.8
 
 deploy:
   context: amanecloud/DEV
@@ -16,7 +17,7 @@ deploy:
   type: statefulset
   port:
   - 80
-  
+  - 443
 volumes:
 - claim: wordpress-data
   mount: /var/www/html/wp-content/uploads
@@ -28,21 +29,22 @@ volumes:
   size: 5Gi 
   
 properties:
+  SITE_URL: "https://amanecloud-dev-wordpress-5-8.038c839d.lowtouch.cloud"
   ENABLE_HA: "no"  
   #if HA is disabled
   MYSQL_HOST : "mariadb-master-10-4:3306"
   #if HA is enabled
   #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
-  #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
-  MYSQL_USER: ecloudcontrol_com
-  MYSQL_DATABASE: ecloudcontrol_com_v3
+     #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
+  MYSQL_USER: 'hybcloud'@'%'
+  MYSQL_DATABASE: hybcloud
   ADMIN_USER: wpadmin
-  ADMIN_PASSWORD:
-     vault: ADMIN_PASSWORD
+  ADMIN_USER: cloudbourne
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
   MYSQL_PASSWORD:
-     vault: MYSQL_PASSWORD_KEY
+     vault: MYSQL_WORDPRESS_PASSWORD
+  APPZ_FILESYNC_HOSTNAME: wordpress-0
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
-  ADMIN_PASSWORD_HASH: $P$BAeYgHEtHyCT335q2Iya9JL4CtKHc1/
+  ADMIN_PASSWORD_HASH: $P$Bbd5.NW6270BIKD39DoIXWQTRyzjaO1
   revision : 2
